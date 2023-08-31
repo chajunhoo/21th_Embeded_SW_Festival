@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv = 'X-UA-compatible' content='IE=edge'>
+    <title>PeerChat (send)</title>
+    <meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main_patient.css'>
+</head>
+
+<body>
+    <button id = fullscreen>진료입장(전체화면)</button>
+
+    <div id="videos" class="hidden">
+        <div class="video-wrapper" id="user2-wrapper">
+            <video class = "video-player" id="user-1"  autoplay playsinline></video>
+        <div class="video-inside" id="user1-inside">    
+            <video class = "video-player" id="user-2" autoplay playsinline></video>
+        </div>
+    </div>   
+</div>
+
+<div id="discription" class="hidden">
+    <h2>진단 내용</h2>
+    <textarea id="receive" disabled style="width: 900px; height: 200px;"></textarea>
+    <button id="save">저장</button>
+</div>
+
+<button id="start" class="hidden">측정시작</button>
+<button id="stopSerial" class="hidden">측정종료</button>
+<br>
+<button id="closeButton" class="hidden">끝내기</button>
+</body>
+
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src='agora-rtm-sdk-1.5.1.js'></script>
+<script src='main_patient.js'></script>
+
+
+</html>
